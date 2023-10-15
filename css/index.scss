@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Huawei';
+    src: url('../fonts/HuaweiSans.woff2') format('woff2'),
+        url('../fonts/HuaweiSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+$gray:#333;
+$hoverred:#C7000B;
+@media all and(min-width:0px){
+    body{
+        width: 100%;
+        font-family: Huawei;
+    }
+    .top-nav{
+        height: 25px;
+        font-size: 14px;
+    }
+    .navbar{
+        height: 70px;
+    }
+    .padding{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .search{
+        direction: rtl;
+    }
+    .button{
+        border: 1px solid $gray;
+    }
+    .button:hover{
+        color: white;
+        background-color: $hoverred;
+        border: $hoverred;
+    }
+    .mainfooter{
+        background-color: #f2f2f2;
+        ul li{
+            margin-top: 16px;
+            font-size: 0.85em;
+            text-align: left;
+            width: 200px;
+        }
+        form button{
+            width: 100%;
+        }
+    }
+    .carousel-item{
+        p{
+            text-align: left;
+        }
+
+    }
+    .product{
+        padding-left: 0;
+        border: 1px solid #eee;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+
+        .product-label{
+            font-size: small;
+            font-family:Huawei;
+            transition: all 700ms ease 0s;
+        }
+    }
+    .boxes{
+        .hoversetting , .lastcol{
+            height: 460px;
+        }
+        .text3{
+                a{
+                    font-size: 1em;
+                    font-weight: bold;
+                    line-height: 1.625em;
+                    span{
+                        font-weight: lighter;
+                    } 
+                }
+            
+            a:hover{
+                color: $hoverred;
+            }
+        }
+        .textbox{
+            background-color: #f8f8f8;
+            h4{
+                font-size: 1em;
+            }
+        }
+        .hoversetting a{
+            height: 100%;
+            line-height: 1.625em;
+            border: 1px solid white;
+            overflow: hidden;
+            p{
+                color: #666;
+                font-weight: lighter;
+            }
+            span{
+                font-weight: lighter;
+            }
+            img{
+                transition: all 500ms ease 0s;
+            }
+        
+        }
+    }
+    .footer-otherlink a{
+        font-size: 14px;
+        color: black;
+    }
+    .lastline{
+        color: $gray;
+        font-size: 13px;
+        a{
+            color: $gray;
+        }
+    }
+    .accordion-item{
+        button{
+            background-color: #f2f2f2;
+            font-weight: bolder;
+        }
+        .nav-item{
+            width: 100%;
+            border-bottom: 1px solid #666;
+        }
+    }    
+}
+
+@media all and(min-width:0px) and (max-width:991px){
+    .navbar{
+        .container-fluid{
+            padding-left: 0px;
+            padding-right: 0px;   
+        }
+        .offcanvas{
+            width: 100%;
+            margin-top: 62px;
+            background-color: #f8f8f8;
+            ul{
+                width: 96%;
+            }
+            li{
+                border-bottom: 1px solid #bbbbbb;
+            }
+        }
+    }
+}
+
+@media all and(min-width:992px){
+        
+    .top-nav{
+        height: 25px;
+        font-size: calc(0.6vw + 4px);
+    }
+    .nav-link{
+        color: $gray;
+        font-family: Huawei;
+
+         span{
+            color: white;
+            margin: 1px;
+            padding: 1px;
+         }
+    }
+    .nav-link:hover{
+        span{
+            color: $gray;
+        }
+    }
+    .button{
+        border: 1px solid $gray;
+    }
+    .button:hover{
+        color: white;
+        background-color: $hoverred;
+        border: $hoverred;
+    }
+    .product{
+        img{
+            transition: all 500ms ease 0s;
+        }
+        .product-label span:last-of-type{
+            display: none;
+            font-size: calc(0.9vw + 2px);
+        }
+    }
+        .product:hover{
+            img{
+                transform: scale(1.2);
+                filter: brightness(70%);
+            }
+            .product-label{
+                transform: translateY(-15px);
+            }
+            .product-label span:last-of-type{
+                display: block;
+            }
+
+        }
+        .product-label span:last-of-type:hover{
+            i{
+            transform: translateX(5px);
+            }
+        
+        }
+        .car-btn{
+            justify-content: right;
+            .button{
+                color: white;
+                width: 160px;
+                border: 1px solid white;
+                margin-top: calc(19vw + 2px);
+                margin-right: calc(20vw + 2px);
+            }
+        }
+        .headset{
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: right;
+            top: 520px;
+            right: 0;
+            margin-right: 0;
+            padding-right: 0px;
+            a{
+                display: inline-block;
+                text-align: center;
+                padding-top: 6px;
+                width: 40px;
+                height: 40px;
+                margin-right: 0px;
+                right: 0px;
+            }
+        }
+        .angleup{
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: right;
+            top: 570px;
+            right: 0;
+            margin-right: 0;
+            padding-right: 0px;
+            a{
+                display: inline-block;
+                text-align: center;
+                padding-top: 6px;
+                width: 40px;
+                height: 40px;
+                margin-right: 0px;
+                right: 0px;
+            }
+        }
+
+        .boxes{
+            .hoversetting{
+                height: 460px;
+            }
+            .lastcol{
+                height: 460px;
+            }
+            .text3{
+                    a{
+                        font-size: 1em;
+                        font-weight: bold;
+                        line-height: 1.625em;
+                        span{
+                            font-weight: lighter;
+                        } 
+                    }
+                
+                a:hover{
+                    color: $hoverred;
+                }
+            }
+            .textbox{
+                background-color: #f8f8f8;
+                h4{
+                    font-size: 1em;
+                }
+            }
+            .hoversetting a{
+                height: 100%;
+                line-height: 1.625em;
+                border: 1px solid white;
+                overflow: hidden;
+                p{
+                    color: #666;
+                    font-weight: lighter;
+                }
+                span{
+                    font-weight: lighter;
+                }
+                img{
+                    transition: all 500ms ease 0s;
+                }
+            
+            }
+            .hoversetting:hover{
+                img{
+                    transform: scale(1.08);
+                }
+                .textbox{
+                    filter: brightness(95%);
+                }
+            }
+        }
+        .footer-otherlink a{
+            font-size: calc(0.8vw + 1px);
+        }
+        .lastline{
+            color: $gray;
+            font-size: 14px;
+            opacity: 75%;
+            span{
+                display: inline-block;
+                border-right: 1px solid #bfbfbf;
+                line-height: 13px;
+                padding-right: 20px;
+            }
+            a{
+                display: inline-block;
+                color: $gray;
+            }
+        }
+        .mainfooter{
+            form button{
+                width: 75%;
+            }
+        }
+    
+}

@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'Huawei';
+  src: url("../fonts/HuaweiSans.woff2") format("woff2"), url("../fonts/HuaweiSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media all and (min-width: 0px) {
+  body {
+    width: 100%;
+    font-family: Huawei;
+  }
+  .top-nav {
+    height: 25px;
+    font-size: 14px;
+  }
+  .navbar {
+    height: 70px;
+  }
+  .padding {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .search {
+    direction: rtl;
+  }
+  .button {
+    border: 1px solid #333;
+  }
+  .button:hover {
+    color: white;
+    background-color: #C7000B;
+    border: #C7000B;
+  }
+  .mainfooter {
+    background-color: #f2f2f2;
+  }
+  .mainfooter ul li {
+    margin-top: 16px;
+    font-size: 0.85em;
+    text-align: left;
+    width: 200px;
+  }
+  .mainfooter form button {
+    width: 100%;
+  }
+  .carousel-item p {
+    text-align: left;
+  }
+  .product {
+    padding-left: 0;
+    border: 1px solid #eee;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .product .product-label {
+    font-size: small;
+    font-family: Huawei;
+    transition: all 700ms ease 0s;
+  }
+  .boxes .hoversetting, .boxes .lastcol {
+    height: 460px;
+  }
+  .boxes .text3 a {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.625em;
+  }
+  .boxes .text3 a span {
+    font-weight: lighter;
+  }
+  .boxes .text3 a:hover {
+    color: #C7000B;
+  }
+  .boxes .textbox {
+    background-color: #f8f8f8;
+  }
+  .boxes .textbox h4 {
+    font-size: 1em;
+  }
+  .boxes .hoversetting a {
+    height: 100%;
+    line-height: 1.625em;
+    border: 1px solid white;
+    overflow: hidden;
+  }
+  .boxes .hoversetting a p {
+    color: #666;
+    font-weight: lighter;
+  }
+  .boxes .hoversetting a span {
+    font-weight: lighter;
+  }
+  .boxes .hoversetting a img {
+    transition: all 500ms ease 0s;
+  }
+  .footer-otherlink a {
+    font-size: 14px;
+    color: black;
+  }
+  .lastline {
+    color: #333;
+    font-size: 13px;
+  }
+  .lastline a {
+    color: #333;
+  }
+  .accordion-item button {
+    background-color: #f2f2f2;
+    font-weight: bolder;
+  }
+  .accordion-item .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #666;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 991px) {
+  .navbar .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar .offcanvas {
+    width: 100%;
+    margin-top: 62px;
+    background-color: #f8f8f8;
+  }
+  .navbar .offcanvas ul {
+    width: 96%;
+  }
+  .navbar .offcanvas li {
+    border-bottom: 1px solid #bbbbbb;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .top-nav {
+    height: 25px;
+    font-size: calc(0.6vw + 4px);
+  }
+  .nav-link {
+    color: #333;
+    font-family: Huawei;
+  }
+  .nav-link span {
+    color: white;
+    margin: 1px;
+    padding: 1px;
+  }
+  .nav-link:hover span {
+    color: #333;
+  }
+  .button {
+    border: 1px solid #333;
+  }
+  .button:hover {
+    color: white;
+    background-color: #C7000B;
+    border: #C7000B;
+  }
+  .product img {
+    transition: all 500ms ease 0s;
+  }
+  .product .product-label span:last-of-type {
+    display: none;
+    font-size: calc(0.9vw + 2px);
+  }
+  .product:hover img {
+    transform: scale(1.2);
+    filter: brightness(70%);
+  }
+  .product:hover .product-label {
+    transform: translateY(-15px);
+  }
+  .product:hover .product-label span:last-of-type {
+    display: block;
+  }
+  .product-label span:last-of-type:hover i {
+    transform: translateX(5px);
+  }
+  .car-btn {
+    justify-content: right;
+  }
+  .car-btn .button {
+    color: white;
+    width: 160px;
+    border: 1px solid white;
+    margin-top: calc(19vw + 2px);
+    margin-right: calc(20vw + 2px);
+  }
+  .headset {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: right;
+    top: 520px;
+    right: 0;
+    margin-right: 0;
+    padding-right: 0px;
+  }
+  .headset a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 6px;
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    right: 0px;
+  }
+  .angleup {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: right;
+    top: 570px;
+    right: 0;
+    margin-right: 0;
+    padding-right: 0px;
+  }
+  .angleup a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 6px;
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    right: 0px;
+  }
+  .boxes .hoversetting {
+    height: 460px;
+  }
+  .boxes .lastcol {
+    height: 460px;
+  }
+  .boxes .text3 a {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.625em;
+  }
+  .boxes .text3 a span {
+    font-weight: lighter;
+  }
+  .boxes .text3 a:hover {
+    color: #C7000B;
+  }
+  .boxes .textbox {
+    background-color: #f8f8f8;
+  }
+  .boxes .textbox h4 {
+    font-size: 1em;
+  }
+  .boxes .hoversetting a {
+    height: 100%;
+    line-height: 1.625em;
+    border: 1px solid white;
+    overflow: hidden;
+  }
+  .boxes .hoversetting a p {
+    color: #666;
+    font-weight: lighter;
+  }
+  .boxes .hoversetting a span {
+    font-weight: lighter;
+  }
+  .boxes .hoversetting a img {
+    transition: all 500ms ease 0s;
+  }
+  .boxes .hoversetting:hover img {
+    transform: scale(1.08);
+  }
+  .boxes .hoversetting:hover .textbox {
+    filter: brightness(95%);
+  }
+  .footer-otherlink a {
+    font-size: calc(0.8vw + 1px);
+  }
+  .lastline {
+    color: #333;
+    font-size: 14px;
+    opacity: 75%;
+  }
+  .lastline span {
+    display: inline-block;
+    border-right: 1px solid #bfbfbf;
+    line-height: 13px;
+    padding-right: 20px;
+  }
+  .lastline a {
+    display: inline-block;
+    color: #333;
+  }
+  .mainfooter form button {
+    width: 75%;
+  }
+}
